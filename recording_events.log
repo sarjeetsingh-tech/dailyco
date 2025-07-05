@@ -1,0 +1,107 @@
+[2025-07-05T04:16:26.224Z] 🚀 Daily.co Webhook Server started on port 3001
+    Webhook URL: http://localhost:3001/webhook
+    Health check: http://localhost:3001/health
+    Test endpoint: http://localhost:3001/test
+    Log file: ./recording_events.log
+[2025-07-05T04:21:11.255Z] 🛑 Webhook server shutting down...
+[2025-07-05T04:21:18.317Z] 🚀 Daily.co Webhook Server started on port 3001
+    Webhook URL: http://localhost:3001/webhook
+    Health check: http://localhost:3001/health
+    Test endpoint: http://localhost:3001/test
+    Log file: ./recording_events.log
+[2025-07-05T04:29:09.727Z] 🛑 Webhook server shutting down...
+[2025-07-05T04:29:14.450Z] 🚀 Daily.co Webhook Server started on port 3001
+    Webhook URL: http://localhost:3001/webhook
+    Health check: http://localhost:3001/health
+    Test endpoint: http://localhost:3001/test
+    Log file: ./recording_events.log
+[2025-07-05T04:30:47.169Z] 🔍 VERIFICATION: Daily.co webhook verification request received
+[2025-07-05T04:33:24.460Z] 🔍 VERIFICATION: Daily.co webhook verification request received
+[2025-07-05T04:33:48.543Z] 🔍 VERIFICATION: Daily.co webhook verification request received
+[2025-07-05T04:37:06.423Z] 🔍 VERIFICATION: Daily.co webhook verification request received
+[2025-07-05T04:37:09.733Z] 🔍 VERIFICATION: Daily.co webhook verification request received
+[2025-07-05T04:37:24.297Z] 🔍 VERIFICATION: Daily.co webhook verification request received
+[2025-07-05T04:37:30.949Z] 🔍 VERIFICATION: Daily.co webhook verification request received
+[2025-07-05T04:40:58.295Z] 🛑 Webhook server shutting down...
+[2025-07-05T04:41:06.633Z] 🚀 Daily.co Webhook Server started on port 3001
+    Webhook URL: http://localhost:3001/webhook
+    Health check: http://localhost:3001/health
+    Test endpoint: http://localhost:3001/test
+    Log file: ./recording_events.log
+[2025-07-05T04:45:24.274Z] ❌ WEBHOOK ERROR: "[object Object]" is not valid JSON
+[2025-07-05T04:48:18.928Z] 🚀 Daily.co Webhook Server started on port 3001
+    Webhook URL: http://localhost:3001/webhook
+    Health check: http://localhost:3001/health
+    Test endpoint: http://localhost:3001/test
+    Log file: ./recording_events.log
+[2025-07-05T04:50:42.120Z] ❌ WEBHOOK ERROR: "[object Object]" is not valid JSON
+[2025-07-05T04:58:31.036Z] 🚀 Daily.co Webhook Server started on port 3001
+    Webhook URL: http://localhost:3001/webhook
+    Health check: http://localhost:3001/health
+    Test endpoint: http://localhost:3001/test
+    Log file: ./recording_events.log
+[2025-07-05T04:58:54.914Z] 🛑 Webhook server shutting down...
+[2025-07-05T04:59:06.982Z] 🚀 Daily.co Webhook Server started on port 3001
+    Webhook URL: http://localhost:3001/webhook
+    Health check: http://localhost:3001/health
+    Test endpoint: http://localhost:3001/test
+    Log file: ./recording_events.log
+[2025-07-05T04:59:21.729Z] 🚀 Daily.co Webhook Server started on port 3001
+    Webhook URL: http://localhost:3001/webhook
+    Health check: http://localhost:3001/health
+    Test endpoint: http://localhost:3001/test
+    Log file: ./recording_events.log
+[2025-07-05T05:00:18.485Z] 📝 WEBHOOK EVENT RECEIVED: undefined
+[2025-07-05T05:00:18.486Z] 📝 WEBHOOK: Received event type: undefined
+[2025-07-05T05:02:09.628Z] 📝 WEBHOOK EVENT RECEIVED: recording.started
+[2025-07-05T05:02:09.634Z] ❌ WEBHOOK ERROR: Cannot destructure property 'room_name' of 'event.data' as it is undefined.
+[2025-07-05T05:02:10.422Z] 📝 WEBHOOK EVENT RECEIVED: recording.started
+[2025-07-05T05:02:10.428Z] ❌ WEBHOOK ERROR: Cannot destructure property 'room_name' of 'event.data' as it is undefined.
+[2025-07-05T05:02:13.554Z] 📝 WEBHOOK EVENT RECEIVED: recording.started
+[2025-07-05T05:02:13.560Z] ❌ WEBHOOK ERROR: Cannot destructure property 'room_name' of 'event.data' as it is undefined.
+[2025-07-05T05:04:49.904Z] 🚀 Daily.co Webhook Server started on port 3001
+    Webhook URL: http://localhost:3001/webhook
+    Health check: http://localhost:3001/health
+    Test endpoint: http://localhost:3001/test
+    Log file: ./recording_events.log
+[2025-07-05T05:05:08.760Z] 🛑 Webhook server shutting down...
+[2025-07-05T05:05:17.732Z] 🚀 Daily.co Webhook Server started on port 3001
+    Webhook URL: http://localhost:3001/webhook
+    Health check: http://localhost:3001/health
+    Test endpoint: http://localhost:3001/test
+    Log file: ./recording_events.log
+[2025-07-05T05:09:32.441Z] 📝 WEBHOOK EVENT RECEIVED: undefined
+[2025-07-05T05:09:32.445Z] 📝 WEBHOOK: Received event type: undefined
+[2025-07-05T05:10:09.558Z] 📝 WEBHOOK EVENT RECEIVED: recording.started
+[2025-07-05T05:10:09.562Z] ❌ INVALID EVENT: Missing data in recording.started event
+[2025-07-05T05:10:14.278Z] 📝 WEBHOOK EVENT RECEIVED: recording.ready-to-download
+[2025-07-05T05:10:14.281Z] ❌ INVALID EVENT: Missing data in recording.ready-to-download event
+[2025-07-05T05:21:23.026Z] 🚀 Daily.co Webhook Server started on port 3001
+    Webhook URL: http://localhost:3001/webhook
+    Health check: http://localhost:3001/health
+    Test endpoint: http://localhost:3001/test
+    Log file: ./recording_events.log
+[2025-07-05T05:22:28.737Z] 🛑 Webhook server shutting down...
+[2025-07-05T05:22:39.528Z] 🚀 Daily.co Webhook Server started on port 3001
+    Webhook URL: http://localhost:3001/webhook
+    Health check: http://localhost:3001/health
+    Test endpoint: http://localhost:3001/test
+    Log file: ./recording_events.log
+[2025-07-05T05:23:34.091Z] 📝 WEBHOOK EVENT RECEIVED: undefined
+[2025-07-05T05:23:34.093Z] 📝 WEBHOOK: Received event type: undefined
+[2025-07-05T05:24:11.517Z] 📝 WEBHOOK EVENT RECEIVED: recording.started
+[2025-07-05T05:24:11.573Z] 🎬 RECORDING STARTED
+    Room: test-room-ba7dae36
+    Recording ID: 215c5137-011f-4317-9fdc-450c5ac72b71
+    Started by: d42bce98-895f-4391-a994-273f37a33bd9
+    Start time: 5/7/2025, 10:54:08 am
+[2025-07-05T05:24:23.794Z] 📝 WEBHOOK EVENT RECEIVED: recording.ready-to-download
+[2025-07-05T05:24:26.100Z] ✅ RECORDING STOPPED & READY
+    Room: test-room-ba7dae36
+    Recording ID: 215c5137-011f-4317-9fdc-450c5ac72b71
+    Duration: 0.22 minutes
+    Started: 5/7/2025, 10:54:08 am
+    S3 Key: teams-ph/test-room-ba7dae36/1751693048614
+    
+    📥 Download URL: Not available
+    🎦 Streaming URL: https://recordings-2025.s3.ap-south-1.amazonaws.com/teams-ph/test-room-ba7dae36/1751693048614?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIATAVABB3WGJGIRIKF%2F20250705%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20250705T052425Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEDUaCmFwLXNvdXRoLTEiRzBFAiB6Lf5cX6mw7DeFsjbNexWZwUwLu4USnsTwgQ4ncrmOTgIhAPOG16a35KlIEZvcFFhd36qTOkKN1gK1AZsbNOov0n0xKqICCD8QABoMMjA3NTY3Nzg1NzA4IgzIo3MW0ASntKiOgioq%2FwFUd%2Fx3YjVRAY9w4X%2Fv647GLWIyHH4YqL8zd%2FiMgvum5Vt%2FVYGEDLMTk1EWwp%2Fd2BUdqZSvDGsYavGVmgror9%2FTShuQc8jjABOyCegPi5ITzWAvD1eZdNF7s7wzBbUADFIxM2vy1E0xZZAC295zYk4reHn3ntYddDmaIH84fpDx5vlAcXg1UmOUfJ0QfB2M2bWe7vdCNTW7owBOFvoPc%2Frj%2FRkO8O8K00fDhb2BiaJqVGIj%2FJhKkIEldpk9F0axbC8sNMqf6%2BRQzWRJ%2BjpF13bGTp97hWdNCp%2BEltpq%2BeRdDBEZSqjabU9nRJZM8g7pRxAdTdyqkRusdzJir9gK2Dswie6iwwY6nQEeqBOm092sS%2Fb3dsz3TIUOZ4DH%2F5%2BBgbZvaEySNkmXhycSfJWf8OtB9B%2Fyqmm8pH%2FmeITj0akYfo6zINY1e84FO7W1Ss6iYlkxnvT5Cmx2Ud593gECk%2F6VU0LFdmFBtRPJlxZaYENQSCOBRwWUcnkZ872iq67PRmIld3tRYATfwMu8ddMqRYi9xSbgrbLw9gxsQAkMehAD3txAWPFg&X-Amz-Signature=b2b6429c0910fba4b1c87d5b84dc345ca3be2df7f6ac900cabc98f0b320e7c7b&X-Amz-SignedHeaders=host&response-content-disposition=inline

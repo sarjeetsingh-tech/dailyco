@@ -19,7 +19,9 @@ DAILY_WEBHOOK_SECRET=your_webhook_secret_here
 
 # Optional: AWS credentials for recordings
 RECORDING_BUCKET_NAME=your_s3_bucket_name
-RECORDING_BUCKET_REGION=us-east-1`);
+RECORDING_BUCKET_REGION=us-east-1
+RECORDING_ASSUME_ROLE_ARN=your_role_arn
+RECORDING_ALLOW_API_ACCESS=true`);
     console.log('Created .env file. Please edit it with your API credentials.');
     process.exit(1);
 }
@@ -101,6 +103,7 @@ class DailyTester {
             o: isInterviewer,
             iat: now,
             exp: now + (2 * 60 * 60),
+            enable_recording_ui: false,
             
             ...(isInterviewer && {
                 sr: true,
@@ -249,6 +252,112 @@ class DailyTester {
         return shareUrl;
     }
 
+    async getRecordingAccessLink(recordingId, validForSecs = 3600) {
+        try {
+            console.log(`Getting access link for recording: ${recordingId}`);
+            const response = await dailyApi.get(`/recordings/${recordingId}/access-link?valid_for_secs=${validForSecs}`);
+            
+            if (response.data.download_link) {
+                console.log('Recording access link:', response.data.download_link);
+                console.log('Link expires at:', new Date(response.data.expires * 1000).toLocaleString());
+                return response.data.download_link;
+            } else {
+                console.log('Access link not available');
+                return null;
+            }
+        } catch (error) {
+            console.error('Error getting recording access link:', error.response?.data || error.message);
+            throw error;
+        }
+    }
+    
+    async getRoomRecordingsWithAccessLinks(roomName, validForSecs = 3600) {
+        try {
+            console.log(`Getting all recordings for room: ${roomName}`);
+            const recordingsResponse = await dailyApi.get(`/recordings?room_name=${roomName}`);
+            
+            if (!recordingsResponse.data.data || recordingsResponse.data.data.length === 0) {
+                console.log(`No recordings found for room: ${roomName}`);
+                return [];
+            }
+            
+            console.log(`Found ${recordingsResponse.data.data.length} recordings for room: ${roomName}`);
+            
+            const recordingsWithLinks = [];
+            
+            for (const recording of recordingsResponse.data.data) {
+                console.log(`\nProcessing recording: ${recording.id}`);
+                console.log(`  Status: ${recording.status}`);
+                console.log(`  Duration: ${recording.duration} seconds`);
+                console.log(`  Started at: ${new Date(recording.start_ts * 1000).toLocaleString()}`);
+                
+                try {
+                    if (recording.status === 'finished') {
+                        const accessLinkResponse = await dailyApi.get(`/recordings/${recording.id}/access-link?valid_for_secs=${validForSecs}`);
+                        
+                        if (accessLinkResponse.data.download_link) {
+                            const accessLink = accessLinkResponse.data.download_link;
+                            const expiresAt = new Date(accessLinkResponse.data.expires * 1000).toLocaleString();
+                            
+                            console.log(`  Access link: ${accessLink}`);
+                            console.log(`  Link expires at: ${expiresAt}`);
+                            
+                            recordingsWithLinks.push({
+                                recording,
+                                accessLink: accessLink,
+                                expiresAt: expiresAt
+                            });
+                        } else {
+                            console.log(`  Access link not available for recording: ${recording.id}`);
+                            recordingsWithLinks.push({
+                                recording,
+                                accessLink: null,
+                                expiresAt: null
+                            });
+                        }
+                    } else {
+                        console.log(`  Recording ${recording.id} is not finished (status: ${recording.status}), skipping access link generation`);
+                        recordingsWithLinks.push({
+                            recording,
+                            accessLink: null,
+                            expiresAt: null
+                        });
+                    }
+                } catch (error) {
+                    console.error(`  Error getting access link for recording ${recording.id}:`, error.response?.data || error.message);
+                    recordingsWithLinks.push({
+                        recording,
+                        accessLink: null,
+                        expiresAt: null,
+                        error: error.message
+                    });
+                }
+            }
+            
+            console.log('\nSummary of recordings with access links:');
+            recordingsWithLinks.forEach((item, index) => {
+                console.log(`\nRecording ${index + 1}:`);
+                console.log(`  ID: ${item.recording.id}`);
+                console.log(`  Status: ${item.recording.status}`);
+                console.log(`  Duration: ${item.recording.duration} seconds`);
+                if (item.accessLink) {
+                    console.log(`  Access link available, expires at: ${item.expiresAt}`);
+                } else if (item.error) {
+                    console.log(`  Error getting access link: ${item.error}`);
+                } else if (item.recording.status !== 'finished') {
+                    console.log(`  No access link: recording not finished`);
+                } else {
+                    console.log(`  No access link available`);
+                }
+            });
+            
+            return recordingsWithLinks;
+        } catch (error) {
+            console.error(`Error getting recordings for room ${roomName}:`, error.response?.data || error.message);
+            throw error;
+        }
+    }
+
     async downloadRecording(recordingId, outputPath = './recordings/') {
         try {
             const downloadUrl = await this.getRecordingDownloadUrl(recordingId);
@@ -338,6 +447,47 @@ class DailyTester {
         }
     }
 
+    async configureS3RecordingSettings(bucketName, bucketRegion, assumeRoleArn, allowApiAccess = true, allowStreamingFromBucket = false) {
+        try {
+            // Use values from .env if not provided
+            bucketName = bucketName || process.env.RECORDING_BUCKET_NAME;
+            bucketRegion = bucketRegion || process.env.RECORDING_BUCKET_REGION;
+            assumeRoleArn = assumeRoleArn || process.env.RECORDING_ASSUME_ROLE_ARN;
+            
+            // Parse allowApiAccess from env if available
+            if (!bucketName || !bucketRegion || !assumeRoleArn) {
+                throw new Error('Missing S3 configuration. Please provide values as arguments or in .env file.');
+            }
+            
+            // Parse allowApiAccess from env if available and not provided as argument
+            if (allowApiAccess === true && process.env.RECORDING_ALLOW_API_ACCESS !== undefined) {
+                allowApiAccess = process.env.RECORDING_ALLOW_API_ACCESS.toLowerCase() === 'true';
+            }
+            
+            console.log('Configuring S3 recording settings...');
+            console.log(`Bucket: ${bucketName}, Region: ${bucketRegion}`);
+            console.log(`Role ARN: ${assumeRoleArn}, Allow API Access: ${allowApiAccess}, Allow Streaming From Bucket: ${allowStreamingFromBucket}`);
+            
+            // FIXED: Use the correct endpoint - POST to root '/' endpoint for domain configuration
+            const response = await dailyApi.post('/', {
+                properties: {
+                    recordings_bucket: {
+                        bucket_name: bucketName,
+                        bucket_region: bucketRegion,
+                        assume_role_arn: assumeRoleArn,
+                        allow_api_access: allowApiAccess,
+                        allow_streaming_from_bucket: allowStreamingFromBucket
+                    }
+                }
+            });
+            
+            console.log('S3 recording settings configured:', response.data);
+            return response.data;
+        } catch (error) {
+            console.error('Error configuring S3 recording settings:', error.response?.data || error.message);
+            throw new Error('Failed to configure S3 recording settings');
+        }
+    }
     async deleteRoom() {
         if (!this.roomName) {
             throw new Error('Room Name must be set before deleting');
@@ -402,11 +552,15 @@ Available commands:
   node daily-test.js list-recordings    - List all recordings
   node daily-test.js access-recordings  - List recordings with access URLs
   node daily-test.js get-recording ID   - Get details of a specific recording by ID
+  node daily-test.js get-share-url ID   - Get share URL for a recording
+  node daily-test.js get-access-link ID [valid_for_secs] - Get streaming access link for a recording
+  node daily-test.js room-recordings ROOM_NAME [valid_for_secs] - Get all recordings for a room with access links
   node daily-test.js get-download-url ID - Get download URL for a recording
   node daily-test.js download-recording ID [path] - Download a recording to local file
   node daily-test.js recordings-by-room ROOM_NAME - List recordings for a specific room
   node daily-test.js delete-room        - Delete the last created room
   node daily-test.js webhook URL        - Configure a webhook
+  node daily-test.js configure-s3 [BUCKET_NAME] [BUCKET_REGION] [ASSUME_ROLE_ARN] [ALLOW_API_ACCESS] [ALLOW_STREAMING] - Configure S3 recording settings (uses .env if not provided)
             `);
             return;
         }
@@ -526,6 +680,37 @@ Available commands:
                 await tester.getRecordingById(recordingId);
                 break;
                 
+            case 'get-share-url':
+                const shareRecordingId = args[1];
+                if (!shareRecordingId) {
+                    throw new Error('Recording ID is required. Usage: node daily-test.js get-share-url ID');
+                }
+                const recording = await tester.getRecordingById(shareRecordingId);
+                if (recording.share_token) {
+                    await tester.getRecordingShareUrl(recording.share_token);
+                } else {
+                    console.log('No share token available for this recording');
+                }
+                break;
+                
+            case 'get-access-link':
+                const accessRecordingId = args[1];
+                if (!accessRecordingId) {
+                    throw new Error('Recording ID is required. Usage: node daily-test.js get-access-link ID [valid_for_secs]');
+                }
+                const validForSecs = args[2] ? parseInt(args[2]) : 3600;
+                await tester.getRecordingAccessLink(accessRecordingId, validForSecs);
+                break;
+                
+            case 'room-recordings':
+                const roomNameForRecordings = args[1];
+                if (!roomNameForRecordings) {
+                    throw new Error('Room name is required. Usage: node daily-test.js room-recordings ROOM_NAME [valid_for_secs]');
+                }
+                const validForSecsForRoom = args[2] ? parseInt(args[2]) : 3600;
+                await tester.getRoomRecordingsWithAccessLinks(roomNameForRecordings, validForSecsForRoom);
+                break;
+                
             case 'recordings-by-room':
                 const roomName = args[1];
                 if (!roomName) {
@@ -558,6 +743,16 @@ Available commands:
                     throw new Error('Webhook URL is required. Usage: node daily-test.js webhook URL');
                 }
                 await tester.configureWebhook(webhookUrl);
+                break;
+                
+            case 'configure-s3':
+                const bucketName = args[1] || null;
+                const bucketRegion = args[2] || null;
+                const assumeRoleArn = args[3] || null;
+                const allowApiAccess = args[4] ? args[4].toLowerCase() === 'true' : true;
+                const allowStreamingFromBucket = args[5] ? args[5].toLowerCase() === 'true' : false;
+                
+                await tester.configureS3RecordingSettings(bucketName, bucketRegion, assumeRoleArn, allowApiAccess, allowStreamingFromBucket);
                 break;
                 
             default:

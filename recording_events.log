@@ -105,3 +105,290 @@
     
     📥 Download URL: Not available
     🎦 Streaming URL: https://recordings-2025.s3.ap-south-1.amazonaws.com/teams-ph/test-room-ba7dae36/1751693048614?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIATAVABB3WGJGIRIKF%2F20250705%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20250705T052425Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEDUaCmFwLXNvdXRoLTEiRzBFAiB6Lf5cX6mw7DeFsjbNexWZwUwLu4USnsTwgQ4ncrmOTgIhAPOG16a35KlIEZvcFFhd36qTOkKN1gK1AZsbNOov0n0xKqICCD8QABoMMjA3NTY3Nzg1NzA4IgzIo3MW0ASntKiOgioq%2FwFUd%2Fx3YjVRAY9w4X%2Fv647GLWIyHH4YqL8zd%2FiMgvum5Vt%2FVYGEDLMTk1EWwp%2Fd2BUdqZSvDGsYavGVmgror9%2FTShuQc8jjABOyCegPi5ITzWAvD1eZdNF7s7wzBbUADFIxM2vy1E0xZZAC295zYk4reHn3ntYddDmaIH84fpDx5vlAcXg1UmOUfJ0QfB2M2bWe7vdCNTW7owBOFvoPc%2Frj%2FRkO8O8K00fDhb2BiaJqVGIj%2FJhKkIEldpk9F0axbC8sNMqf6%2BRQzWRJ%2BjpF13bGTp97hWdNCp%2BEltpq%2BeRdDBEZSqjabU9nRJZM8g7pRxAdTdyqkRusdzJir9gK2Dswie6iwwY6nQEeqBOm092sS%2Fb3dsz3TIUOZ4DH%2F5%2BBgbZvaEySNkmXhycSfJWf8OtB9B%2Fyqmm8pH%2FmeITj0akYfo6zINY1e84FO7W1Ss6iYlkxnvT5Cmx2Ud593gECk%2F6VU0LFdmFBtRPJlxZaYENQSCOBRwWUcnkZ872iq67PRmIld3tRYATfwMu8ddMqRYi9xSbgrbLw9gxsQAkMehAD3txAWPFg&X-Amz-Signature=b2b6429c0910fba4b1c87d5b84dc345ca3be2df7f6ac900cabc98f0b320e7c7b&X-Amz-SignedHeaders=host&response-content-disposition=inline
+[2025-07-14T16:05:34.938Z] 🚀 Daily.co Webhook Server started on port 3001
+    Webhook URL: http://localhost:3001/webhook
+    Health check: http://localhost:3001/health
+    Test endpoint: http://localhost:3001/test
+    Log file: ./recording_events.log
+[2025-07-14T16:09:46.361Z] 🛑 Webhook server shutting down...
+[2025-07-14T16:09:55.823Z] 🚀 Daily.co Webhook Server started on port 3001
+    Webhook URL: http://localhost:3001/webhook
+    Health check: http://localhost:3001/health
+    Test endpoint: http://localhost:3001/test
+    Log file: ./recording_events.log
+[2025-07-14T16:11:46.171Z] 🚀 Daily.co Webhook Server started on port 3001
+    Webhook URL: http://localhost:3001/webhook
+    Health check: http://localhost:3001/health
+    Test endpoint: http://localhost:3001/test
+    Log file: ./recording_events.log
+[2025-07-14T16:12:05.111Z] 📝 WEBHOOK EVENT RECEIVED: undefined
+[2025-07-14T16:12:05.112Z] 📝 WEBHOOK: Received event type: undefined
+[2025-07-14T16:12:06.410Z] 🚀 Daily.co Webhook Server started on port 3001
+    Webhook URL: http://localhost:3001/webhook
+    Health check: http://localhost:3001/health
+    Test endpoint: http://localhost:3001/test
+    Log file: ./recording_events.log
+[2025-07-14T16:15:17.291Z] 🚀 Daily.co Webhook Server started on port 3001
+    Webhook URL: http://localhost:3001/webhook
+    Health check: http://localhost:3001/health
+    Test endpoint: http://localhost:3001/test
+    Log file: ./recording_events.log
+[2025-07-14T16:15:28.512Z] 🚀 Daily.co Webhook Server started on port 3001
+    Webhook URL: http://localhost:3001/webhook
+    Health check: http://localhost:3001/health
+    Test endpoint: http://localhost:3001/test
+    Log file: ./recording_events.log
+[2025-07-14T16:15:30.202Z] 🚀 Daily.co Webhook Server started on port 3001
+    Webhook URL: http://localhost:3001/webhook
+    Health check: http://localhost:3001/health
+    Test endpoint: http://localhost:3001/test
+    Log file: ./recording_events.log
+[2025-07-14T16:15:42.028Z] 🚀 Daily.co Webhook Server started on port 3001
+    Webhook URL: http://localhost:3001/webhook
+    Health check: http://localhost:3001/health
+    Test endpoint: http://localhost:3001/test
+    Log file: ./recording_events.log
+[2025-07-14T16:15:45.091Z] 🚀 Daily.co Webhook Server started on port 3001
+    Webhook URL: http://localhost:3001/webhook
+    Health check: http://localhost:3001/health
+    Test endpoint: http://localhost:3001/test
+    Log file: ./recording_events.log
+[2025-07-14T16:16:05.801Z] 🚀 Daily.co Webhook Server started on port 3001
+    Webhook URL: http://localhost:3001/webhook
+    Health check: http://localhost:3001/health
+    Test endpoint: http://localhost:3001/test
+    Log file: ./recording_events.log
+[2025-07-14T16:16:07.671Z] 🚀 Daily.co Webhook Server started on port 3001
+    Webhook URL: http://localhost:3001/webhook
+    Health check: http://localhost:3001/health
+    Test endpoint: http://localhost:3001/test
+    Log file: ./recording_events.log
+[2025-07-14T16:18:47.591Z] 🚀 Daily.co Webhook Server started on port 3001
+    Webhook URL: http://localhost:3001/webhook
+    Health check: http://localhost:3001/health
+    Test endpoint: http://localhost:3001/test
+    Log file: ./recording_events.log
+[2025-07-14T16:18:51.347Z] 🚀 Daily.co Webhook Server started on port 3001
+    Webhook URL: http://localhost:3001/webhook
+    Health check: http://localhost:3001/health
+    Test endpoint: http://localhost:3001/test
+    Log file: ./recording_events.log
+[2025-07-14T16:19:01.704Z] 🚀 Daily.co Webhook Server started on port 3001
+    Webhook URL: http://localhost:3001/webhook
+    Health check: http://localhost:3001/health
+    Test endpoint: http://localhost:3001/test
+    Log file: ./recording_events.log
+[2025-07-14T16:19:44.816Z] 🚀 Daily.co Webhook Server started on port 3001
+    Webhook URL: http://localhost:3001/webhook
+    Health check: http://localhost:3001/health
+    Test endpoint: http://localhost:3001/test
+    Log file: ./recording_events.log
+[2025-07-14T16:19:47.641Z] 🚀 Daily.co Webhook Server started on port 3001
+    Webhook URL: http://localhost:3001/webhook
+    Health check: http://localhost:3001/health
+    Test endpoint: http://localhost:3001/test
+    Log file: ./recording_events.log
+[2025-07-14T16:20:19.159Z] 🚀 Daily.co Webhook Server started on port 3001
+    Webhook URL: http://localhost:3001/webhook
+    Health check: http://localhost:3001/health
+    Test endpoint: http://localhost:3001/test
+    Log file: ./recording_events.log
+[2025-07-14T16:20:22.054Z] 🚀 Daily.co Webhook Server started on port 3001
+    Webhook URL: http://localhost:3001/webhook
+    Health check: http://localhost:3001/health
+    Test endpoint: http://localhost:3001/test
+    Log file: ./recording_events.log
+[2025-07-14T16:21:37.698Z] 📝 WEBHOOK EVENT RECEIVED: recording.started
+[2025-07-14T16:21:37.871Z] 🎬 RECORDING STARTED
+    Room: test-room-53217d32
+    Recording ID: 7b244099-946e-4ffb-89cc-d929998c590a
+    Started by: fce3150e-8c61-4c94-bd01-688260acdab0
+    Start time: 14/7/2025, 9:51:35 pm
+[2025-07-14T16:21:41.068Z] 📝 WEBHOOK EVENT RECEIVED: recording.ready-to-download
+[2025-07-14T16:21:43.516Z] ✅ RECORDING STOPPED & READY
+    Room: test-room-53217d32
+    Recording ID: 7b244099-946e-4ffb-89cc-d929998c590a
+    Duration: 0.08 minutes
+    Started: 14/7/2025, 9:51:35 pm
+    S3 Key: teams-ph/test-room-53217d32/1752510095168
+    
+    📥 Download URL: Not available
+    🎦 Streaming URL: https://recordings-2025.s3.ap-south-1.amazonaws.com/teams-ph/test-room-53217d32/1752510095168?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIATAVABB3WL745TH47%2F20250714%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20250714T162143Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEBgaCmFwLXNvdXRoLTEiRzBFAiAGeQEoDSpfVdCctcT56AvXxb%2BqwvevP7t2Te378kAvMQIhAPVPTWluvy4Iar7PAJ5Y%2Fbm%2Bs1JpDJShg5KOGJBpxD%2BiKqICCDEQABoMMjA3NTY3Nzg1NzA4Igw%2FX2JsyxTa93BU1XIq%2FwEiPSw5J0%2BEDyl3oaawyYpaLhij4OlyUUeqRlIFJBKObYnMC1LL6uvabqAGe3D3h%2BMFHkJ4vSCNJTdVTVkMAMe4AvXJQpfq2J24qmnqAT66%2BfyAmlD4HTX84Q%2BD1xmRgQX8y0RH3C1mRcIFAAxMA3DZjSltFh5HOvrckhp9gY7dzb0FxDj7MAunXAu3cT0qKGZocy2hUZ1HfVdgM9mLQB0sRQnCbLb2Musjs9XeMtbAw052S18owHq5BtpS%2B%2B1FXZ8M2sSTFUXfg6GVOjowMHoUXa4xjfZyrcbRt4uy%2FZ6%2FIUbOwY0NRieJHsx7QA2PDrORcL9LDF2ar2puK1u0IBYwl93UwwY6nQFVU7Q3EcnDtbctJGQ%2FuctnVpXS0lntaVFqkA%2FDeOU%2BILDDI5pnrOKgDHsmgOwM7kmlMH0HPn4UTVhdVCUly8FQ79AnqNEYNtfiy3jFykdCEIi4qqTMgeppvUWyis2OZKlfK32C3CbXlrdWRR54yYKel5HtEh%2Fjq42WcXG4GeRxDRDTRAR793PxMy4h3A8ZPz8A4cWIZEzZDrYMgUs9&X-Amz-Signature=5eedd1f542879c90307ac09b95a4875f341890f5462ec9d4996a57e3f649520c&X-Amz-SignedHeaders=host&response-content-disposition=inline
+[2025-07-14T16:22:28.890Z] 📝 WEBHOOK EVENT RECEIVED: recording.started
+[2025-07-14T16:22:28.891Z] 🎬 RECORDING STARTED
+    Room: test-room-53217d32
+    Recording ID: 0c8c80c3-a5a9-44d7-b35c-3b1c3fa6167d
+    Started by: Unknown
+    Start time: 14/7/2025, 9:52:26 pm
+[2025-07-14T16:22:29.808Z] 🚀 Daily.co Webhook Server started on port 3001
+    Webhook URL: http://localhost:3001/webhook
+    Health check: http://localhost:3001/health
+    Test endpoint: http://localhost:3001/test
+    Log file: ./recording_events.log
+[2025-07-14T16:23:14.191Z] 📝 WEBHOOK EVENT RECEIVED: recording.ready-to-download
+[2025-07-14T16:23:16.417Z] ✅ RECORDING STOPPED & READY
+    Room: test-room-53217d32
+    Recording ID: 0c8c80c3-a5a9-44d7-b35c-3b1c3fa6167d
+    Duration: 0.12 minutes
+    Started: 14/7/2025, 9:52:26 pm
+    S3 Key: teams-ph/test-room-53217d32/1752510146102
+    
+    📥 Download URL: Not available
+    🎦 Streaming URL: https://recordings-2025.s3.ap-south-1.amazonaws.com/teams-ph/test-room-53217d32/1752510146102?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIATAVABB3WOQJ2C2G2%2F20250714%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20250714T162316Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEBgaCmFwLXNvdXRoLTEiRzBFAiAs4fMCSsxb2qovjOgQctd2UAZOQOG0dsPnXiBRptJhygIhAKQ13lqfuIgviN4Lk9Vwoh4UU5Pf%2F5b1ek26rbc0%2BZUkKqICCDIQABoMMjA3NTY3Nzg1NzA4IgzYRDAF7AqQT4hM6Owq%2FwFiZGz%2FnRv0CBfDCg9hUOU1FgNMdxQZxZPDZE%2F2umLuHAD%2BhkCDVSLgGqc2dLQHsvAuZutKuVfcxGFUsuJ%2BxlY8p773e%2FyzjvqjMzgxZdhVeVXMe%2BAIqTcZxEKvhAjfVl4neuoiYzRtUJxxKHPYn7W44TatL%2F0qxcBd8QECduAmDkRue599dMfk79vUvp%2FonKYmtasY46rH7aKh%2FY5Sk5SZYFI7FoLFpUXSZraYKqk%2FIAJYbNhUWojylzjPcGN2EIP5brwlDYnLRaoo5TfS3C%2B1tMwE%2Fn35twxN5Hzh9L36nsV516urUFP%2B37IRrh0MhrZr30BMuthm9Nbl%2FHxpydow9N3UwwY6nQF2avU%2BVn8QdAXhyhKE6HUsy4awbm%2FZnfw3XX0KufMaXIYBJechXQGHZpZcPuLA1iQ3n%2BFcRt4oyVEj3mwc5rmGSVfPQoh2DXxhtVDTC8ypKvE0teZ5eWn5yrkvnrfO8vjB8uQIVwcVrzuhg93lamEtiTx%2BhXhi4EoWCJai5Z0Ows4f50hJDbDbbWTCt8GPU6ErnEftG3FgJwAXMtAf&X-Amz-Signature=8786445e7c6db26b15b93188f3dfde8703d6cfd87a46c69d90ca664865a6eea0&X-Amz-SignedHeaders=host&response-content-disposition=inline
+[2025-07-14T16:24:30.360Z] 🚀 Daily.co Webhook Server started on port 3001
+    Webhook URL: http://localhost:3001/webhook
+    Health check: http://localhost:3001/health
+    Test endpoint: http://localhost:3001/test
+    Log file: ./recording_events.log
+[2025-07-14T16:24:33.190Z] 🚀 Daily.co Webhook Server started on port 3001
+    Webhook URL: http://localhost:3001/webhook
+    Health check: http://localhost:3001/health
+    Test endpoint: http://localhost:3001/test
+    Log file: ./recording_events.log
+[2025-07-14T16:24:58.369Z] 🚀 Daily.co Webhook Server started on port 3001
+    Webhook URL: http://localhost:3001/webhook
+    Health check: http://localhost:3001/health
+    Test endpoint: http://localhost:3001/test
+    Log file: ./recording_events.log
+[2025-07-14T16:25:00.730Z] 🚀 Daily.co Webhook Server started on port 3001
+    Webhook URL: http://localhost:3001/webhook
+    Health check: http://localhost:3001/health
+    Test endpoint: http://localhost:3001/test
+    Log file: ./recording_events.log
+[2025-07-14T16:25:28.057Z] 🚀 Daily.co Webhook Server started on port 3001
+    Webhook URL: http://localhost:3001/webhook
+    Health check: http://localhost:3001/health
+    Test endpoint: http://localhost:3001/test
+    Log file: ./recording_events.log
+[2025-07-14T16:25:30.609Z] 🚀 Daily.co Webhook Server started on port 3001
+    Webhook URL: http://localhost:3001/webhook
+    Health check: http://localhost:3001/health
+    Test endpoint: http://localhost:3001/test
+    Log file: ./recording_events.log
+[2025-07-14T16:26:15.057Z] 🚀 Daily.co Webhook Server started on port 3001
+    Webhook URL: http://localhost:3001/webhook
+    Health check: http://localhost:3001/health
+    Test endpoint: http://localhost:3001/test
+    Log file: ./recording_events.log
+[2025-07-14T16:26:17.510Z] 🚀 Daily.co Webhook Server started on port 3001
+    Webhook URL: http://localhost:3001/webhook
+    Health check: http://localhost:3001/health
+    Test endpoint: http://localhost:3001/test
+    Log file: ./recording_events.log
+[2025-07-14T16:27:00.014Z] 🚀 Daily.co Webhook Server started on port 3001
+    Webhook URL: http://localhost:3001/webhook
+    Health check: http://localhost:3001/health
+    Test endpoint: http://localhost:3001/test
+    Log file: ./recording_events.log
+[2025-07-14T16:27:07.472Z] 🚀 Daily.co Webhook Server started on port 3001
+    Webhook URL: http://localhost:3001/webhook
+    Health check: http://localhost:3001/health
+    Test endpoint: http://localhost:3001/test
+    Log file: ./recording_events.log
+[2025-07-14T16:27:37.932Z] 📝 WEBHOOK EVENT RECEIVED: recording.started
+[2025-07-14T16:27:37.987Z] 🎬 RECORDING STARTED
+    Room: test-room-4ff40546
+    Recording ID: 15a285a7-d9f0-4461-8592-cbd384bc5d55
+    Started by: d9170cc8-53d2-4009-8bcf-c7486349e337
+    Start time: 14/7/2025, 9:57:34 pm
+[2025-07-14T16:27:41.304Z] 📝 WEBHOOK EVENT RECEIVED: recording.ready-to-download
+[2025-07-14T16:27:43.610Z] ✅ RECORDING STOPPED & READY
+    Room: test-room-4ff40546
+    Recording ID: 15a285a7-d9f0-4461-8592-cbd384bc5d55
+    Duration: 0.08 minutes
+    Started: 14/7/2025, 9:57:34 pm
+    S3 Key: teams-ph/test-room-4ff40546/1752510454778
+    
+    📥 Download URL: Not available
+    🎦 Streaming URL: https://recordings-2025.s3.ap-south-1.amazonaws.com/teams-ph/test-room-4ff40546/1752510454778?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIATAVABB3WKH52R2VB%2F20250714%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20250714T162743Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEBgaCmFwLXNvdXRoLTEiRjBEAiBHN6UL7cD8J1%2FLVb1nqlfdWKovxNzgcFPJHsrr3k8WdQIgWU6FYYBBAgV5emLWEIsJhB62ZZlntfp4wXk7yxGmitYqogIIMhAAGgwyMDc1Njc3ODU3MDgiDMNkcT9BLbHqkG7yUSr%2FAV1%2BzmCfQ2ZHp1%2Bs9Smp2nBP6xRO5ognKlBFv499AgLGu6x3yTroTSmVf7ZvD01qDnKeAai3cvUZtvh6huxJNhTZRXSxkLUv%2FgYL%2BsqNCDJPOF3gYOSyF6Wea665pp7goHzxu7hI9Yvoh65YdakJMMQAEKFr2%2FzqG08%2FN40wQIvzxc2zlnclXnYJcHPTZmyQoGCJiOivhtstmY96PuSoVrj1z19sakqjeDh6vwiL1yBQuK5ME09L4mg5rRWP3o26jO5%2BMbJuxn0u1o4%2BTvYaNp2WGH3Jj17dr3L%2BljGJoMELXbMkdb9vJU2WKK6GPwY%2BWwrGeMLIGkKAULKEb7bc5TD%2F39TDBjqeAZZyvRzeJk9AX2h016r9nF9p1PIEDcRmgeRn%2Bdmn7ho1bHFJpJ4s2kmHJya5qO3UEztNJc8wEMCeHbLXnFsHWZ%2FgoFYcyp8732x3TXM83NxQwB%2FV4jRPEYc%2F5yWgpM9g6MViAIgOCi0WS5skZX6%2FzAU7gYiKWiSuxbukKlKdF6%2B4BTPpz0dkWMf%2B3nWs4PCudi8c6po1bZ7cRadJT6Wv&X-Amz-Signature=ac8de168572305bcff713bcdc65bc3a0c7cf5e6ebe96097b9810490f4858ca1a&X-Amz-SignedHeaders=host&response-content-disposition=inline
+[2025-07-14T16:32:41.627Z] 🚀 Daily.co Webhook Server started on port 3001
+    Webhook URL: http://localhost:3001/webhook
+    Health check: http://localhost:3001/health
+    Test endpoint: http://localhost:3001/test
+    Log file: ./recording_events.log
+[2025-07-14T16:36:58.503Z] 🚀 Daily.co Webhook Server started on port 3001
+    Webhook URL: http://localhost:3001/webhook
+    Health check: http://localhost:3001/health
+    Test endpoint: http://localhost:3001/test
+    Log file: ./recording_events.log
+[2025-07-14T16:37:10.913Z] 🚀 Daily.co Webhook Server started on port 3001
+    Webhook URL: http://localhost:3001/webhook
+    Health check: http://localhost:3001/health
+    Test endpoint: http://localhost:3001/test
+    Log file: ./recording_events.log
+[2025-07-14T16:38:26.321Z] 🚀 Daily.co Webhook Server started on port 3001
+    Webhook URL: http://localhost:3001/webhook
+    Health check: http://localhost:3001/health
+    Test endpoint: http://localhost:3001/test
+    Log file: ./recording_events.log
+[2025-07-14T16:38:40.882Z] 🚀 Daily.co Webhook Server started on port 3001
+    Webhook URL: http://localhost:3001/webhook
+    Health check: http://localhost:3001/health
+    Test endpoint: http://localhost:3001/test
+    Log file: ./recording_events.log
+[2025-07-14T16:38:43.712Z] 🚀 Daily.co Webhook Server started on port 3001
+    Webhook URL: http://localhost:3001/webhook
+    Health check: http://localhost:3001/health
+    Test endpoint: http://localhost:3001/test
+    Log file: ./recording_events.log
+[2025-07-14T16:39:13.596Z] 🚀 Daily.co Webhook Server started on port 3001
+    Webhook URL: http://localhost:3001/webhook
+    Health check: http://localhost:3001/health
+    Test endpoint: http://localhost:3001/test
+    Log file: ./recording_events.log
+[2025-07-14T16:39:17.093Z] 🚀 Daily.co Webhook Server started on port 3001
+    Webhook URL: http://localhost:3001/webhook
+    Health check: http://localhost:3001/health
+    Test endpoint: http://localhost:3001/test
+    Log file: ./recording_events.log
+[2025-07-14T16:39:51.682Z] 🚀 Daily.co Webhook Server started on port 3001
+    Webhook URL: http://localhost:3001/webhook
+    Health check: http://localhost:3001/health
+    Test endpoint: http://localhost:3001/test
+    Log file: ./recording_events.log
+[2025-07-14T16:39:56.511Z] 🚀 Daily.co Webhook Server started on port 3001
+    Webhook URL: http://localhost:3001/webhook
+    Health check: http://localhost:3001/health
+    Test endpoint: http://localhost:3001/test
+    Log file: ./recording_events.log
+[2025-07-14T16:40:09.333Z] 🚀 Daily.co Webhook Server started on port 3001
+    Webhook URL: http://localhost:3001/webhook
+    Health check: http://localhost:3001/health
+    Test endpoint: http://localhost:3001/test
+    Log file: ./recording_events.log
+[2025-07-14T16:40:41.387Z] 🚀 Daily.co Webhook Server started on port 3001
+    Webhook URL: http://localhost:3001/webhook
+    Health check: http://localhost:3001/health
+    Test endpoint: http://localhost:3001/test
+    Log file: ./recording_events.log
+[2025-07-14T16:41:41.002Z] 📝 WEBHOOK EVENT RECEIVED: recording.started
+[2025-07-14T16:41:41.076Z] 🎬 RECORDING STARTED
+    Room: test-room-80ee7c5f
+    Recording ID: 5bb0c564-5dd7-4bd1-9cb4-76e86a7a1986
+    Started by: 16d4987e-b257-4c11-ad79-cce5084b9bbf
+    Start time: 14/7/2025, 10:11:38 pm
+[2025-07-14T16:41:41.787Z] 📝 WEBHOOK EVENT RECEIVED: recording.ready-to-download
+[2025-07-14T16:41:44.153Z] ✅ RECORDING STOPPED & READY
+    Room: test-room-80ee7c5f
+    Recording ID: 5bb0c564-5dd7-4bd1-9cb4-76e86a7a1986
+    Duration: 0.03 minutes
+    Started: 14/7/2025, 10:11:38 pm
+    S3 Key: teams-ph/test-room-80ee7c5f/1752511298280
+    
+    📥 Download URL: Not available
+    🎦 Streaming URL: https://recordings-2025.s3.ap-south-1.amazonaws.com/teams-ph/test-room-80ee7c5f/1752511298280?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIATAVABB3WDA6GAM7U%2F20250714%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20250714T164143Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEBkaCmFwLXNvdXRoLTEiRjBEAiARiPOyxmYzLTHnEGuRdkk902vSuAPfzDeljkdqNIJ%2FIQIgLj%2BywgFX2X6FSfKjyynXf4W99ctbb7ANVoNZwchU4E0qogIIMhAAGgwyMDc1Njc3ODU3MDgiDP2y97YB2ZYoCShYFCr%2FAd%2FSJ0Ags4qhtj2QElp5aGglXR8NEvzZdWx2ypZ2tLoU%2F1Jsccu%2BzcEvlHNYFlGrVnGiQJS3JSKb6KZWvhSCP%2BNU0UCpRrN6hDEFzLvAdw5vM82TU82xnxNalciPyQctgmmGQjmJVbtrdPmJApJfHl7M1FFjXnRMuKM0MXg0XxGZYxG%2FP0iSJxO941fWV7%2Bsvled7EEIQZiuVLLNtsKAoOSMXZOQ0IjUb7I5xaBjlEW31LyqsHqTRH8RGiCLtx%2Fw1xTySOIglXxAQR6YdWEH63t6th54lNUGSWNDyp7rH5r%2Funn6F4DwuYKJfod4AGzFGG612%2Bh47SW1w4Aeslt07jDH5tTDBjqeAalLlQU7RHqASm7NBSqm9WhIFQzm10q8NpZBgLZW1va2jjb66enA4B1bg4AAl%2BOjPQ%2BgW8wDBnZ%2B%2BPkRwu7lv%2FFUSkOBwg9Nlfl8K03LJI2nYRSTt3%2FgFK00qxnqoTfoYOqAcbeG%2BepJ%2BwfV6fJMRSjszOTEcZkezuEt6IIa8DY%2BO693fUrWO%2FwyKyhYEnhUaZICIfTr%2FoueHk9ugLva&X-Amz-Signature=101390e03c855c57082235f40bf338d03158539a7413cc26bd746a512e32b7ad&X-Amz-SignedHeaders=host&response-content-disposition=inline
+[2025-07-14T16:44:30.739Z] 🚀 Daily.co Webhook Server started on port 3001
+    Webhook URL: http://localhost:3001/webhook
+    Health check: http://localhost:3001/health
+    Test endpoint: http://localhost:3001/test
+    Log file: ./recording_events.log
+[2025-07-14T16:44:32.178Z] 🚀 Daily.co Webhook Server started on port 3001
+    Webhook URL: http://localhost:3001/webhook
+    Health check: http://localhost:3001/health
+    Test endpoint: http://localhost:3001/test
+    Log file: ./recording_events.log
+[2025-07-14T16:44:33.068Z] 🚀 Daily.co Webhook Server started on port 3001
+    Webhook URL: http://localhost:3001/webhook
+    Health check: http://localhost:3001/health
+    Test endpoint: http://localhost:3001/test
+    Log file: ./recording_events.log

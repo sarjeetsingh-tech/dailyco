@@ -1,11 +1,11 @@
 {
-  "url": "https://dirty-seals-add.loca.lt",
+  "url": "https://96bb049614c8.ngrok-free.app",
   "eventTypes": [
     "recording.started",
     "recording.ready-to-download",
     "recording.error"
   ],
   "state": "ACTIVE",
-  "created_at": "2025-07-05T05:23:34.479Z",
+  "created_at": "2025-07-14T16:12:05.456Z",
   "hmac_secret": "K8x2mF9pQ7vR3nL6sT1wE4yU8iO5pA2sD9fG7hJ3kL6m"
 }

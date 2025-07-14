@@ -17,8 +17,19 @@ async function listWebhooks() {
     try {
         console.log('Listing current webhooks...');
         const response = await dailyApi.get('/webhooks');
-        // The response is an array directly, not nested under data.data
-        return Array.isArray(response.data) ? response.data : [];
+        console.log('Raw API response:', JSON.stringify(response.data, null, 2));
+        
+        // Handle both possible response formats
+        if (response.data && response.data.data) {
+            // New API format with data.data structure
+            return response.data.data;
+        } else if (Array.isArray(response.data)) {
+            // Old API format with direct array
+            return response.data;
+        } else {
+            console.log('Unexpected API response format:', response.data);
+            return [];
+        }
     } catch (error) {
         console.error('Error listing webhooks:', error.response?.data || error.message);
         throw error;
@@ -39,20 +50,24 @@ async function deleteAllWebhooks() {
     try {
         const webhooks = await listWebhooks();
         
-        if (webhooks.length === 0) {
+        if (!webhooks || webhooks.length === 0) {
             console.log('No webhooks found to delete.');
             return;
         }
         
         console.log(`Found ${webhooks.length} webhooks:`);
         webhooks.forEach(webhook => {
-            console.log(`- ${webhook.uuid}: ${webhook.url} (${webhook.state})`);
+            // Handle both possible ID field names (uuid or id)
+            const id = webhook.uuid || webhook.id;
+            console.log(`- ${id}: ${webhook.url} (${webhook.state})`);
         });
         
         console.log('\nDeleting all webhooks...');
         
         for (const webhook of webhooks) {
-            await deleteWebhook(webhook.uuid);
+            // Handle both possible ID field names (uuid or id)
+            const id = webhook.uuid || webhook.id;
+            await deleteWebhook(id);
         }
         
         console.log('\n✅ All webhooks deleted successfully');
